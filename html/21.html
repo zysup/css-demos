@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水波效果</title>
+    <style>
+        .water{
+            width: 100px;
+            height: 100px;
+            /* border: 1px solid blue; */
+            border-radius: 100%;
+            text-align: center;
+            line-height: 50px;
+            margin: 0 auto;
+            position: relative;
+            animation: water linear infinite;
+            overflow: hidden;
+        }
+        .water>div{
+            position: absolute;
+            width: 200%;
+            height: 200%;
+        }
+        .water1{
+            top: 50%;
+            left: 30%;
+            background-color: rgba(88, 119, 133, 0.336);
+            border-radius: 30%;
+            animation: inherit;
+            animation-duration: 3s;
+        }
+        .water2{
+            top: 50%;
+            left: 15%;
+            background-color: rgba(110, 135, 158, 0.336);
+            border-radius: 20%;
+            animation: inherit;
+            animation-duration: 5s;
+        }
+        .water3{
+            top: 60%;
+            left: -40%;
+            background-color: rgba(47, 69, 83, 0.13);
+            border-radius: 30%;
+            animation: inherit;
+            animation-duration: 7s;
+        }
+        @keyframes water {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg)
+            }
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div class="water">
+        <span>水波效果</span>
+        <div class="water1"></div>
+        <div class="water2"></div>
+        <div class="water3"></div>
+    </div>
+</body>
+</html>

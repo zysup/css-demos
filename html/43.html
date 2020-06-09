@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滚动条样式美化</title>
+    <style>
+        body {
+            height: 2000px;
+            width: 2000px;
+            border: 2px solid red;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+            /**/
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgb(58, 56, 56);
+            border-radius: 2px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: blue;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: pink;
+        }
+
+        ::-webkit-scrollbar-corner {
+            background: #179a16;
+        }
+
+        ::-webkit-resizer {
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+    ::-webkit-scrollbar 滚动条整体部分
+    ::-webkit-scrollbar-thumb 滚动条里面的小方块，能向上向下移动（或往左往右移动，取决于是垂直滚动条还是水平滚动条）
+    ::-webkit-scrollbar-track 滚动条的轨道（里面装有Thumb）
+    ::-webkit-scrollbar-button 滚动条的轨道的两端按钮，允许通过点击微调小方块的位置。
+    ::-webkit-scrollbar-track-piece 内层轨道，滚动条中间部分（除去）
+    ::-webkit-scrollbar-corner 边角，即两个滚动条的交汇处
+    ::-webkit-resizer 两个滚动条的交汇处上用于通过拖动调整元素大小的小控件
+</body>
+
+</html>

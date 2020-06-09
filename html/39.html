@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>面包屑导航</title>
+    <style>
+        ul{
+            display: flex;
+            list-style: none;
+            color: silver;
+        }
+        li:before{
+            content: '\27a5';
+            /* content: '\00A9'; */
+            /* color: red; */
+            /* content: '\00A3'; */
+        }
+        li:first-child:before{
+            content: '';
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">活动</a></li>
+        <li><a href="#">导航&copy;&rArr;&#8592;</a></li>
+    </ul>
+</body>
+</html>

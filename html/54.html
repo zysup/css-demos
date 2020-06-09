@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>土星</title>
+    <style>
+        body {
+            background: black;
+        }
+
+        .container {
+            position: relative;
+            transform-style: preserve-3d;
+        }
+
+        .ring {
+            width: 200px;
+            height: 200px;
+            background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
+            border-radius: 50%;
+
+            position: absolute;
+            transform: rotateX(100deg) rotateY(15deg);
+            animation: move 3s linear infinite;
+        }
+
+        @keyframes move {
+            to {
+                transform: rotateX(100deg) rotateY(15deg) rotateZ(360deg);
+            }
+        }
+
+        .ring:before {
+            content: "";
+            width: 150px;
+            height: 150px;
+            background: #000000;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            border-radius: 50%;
+        }
+
+        .ball {
+            background: rgba(255, 255, 255, 0.1);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            transform: translate(50px, 50px);
+            box-shadow: 0 0 15px 3px magenta inset;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ring"></div>
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>

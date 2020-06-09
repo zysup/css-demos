@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>流式布局</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body{
+				min-height: 100vh;
+				display: flex;/*定义元素为弹性盒*/
+				justify-content: center;/*主轴对齐*/
+				align-items: center;/*侧轴对齐*/
+			}
+			ul li{
+				list-style: none;
+			}
+			ul{
+				width: 300px;
+				height: 500px;
+				display: flex;/*定义盒子为弹性盒*/
+				flex-flow: row wrap;/*定义盒子的子元素排列方式是默认的从左到右  是多行的*/
+				align-items: flex-start;/*定义盒子子元素的排列方式是从头开始*/
+				align-content: flex-start; /*定义盒子多个的时候的排列方式是从头开始*/
+				background: black;
+			}
+			ul li{
+				flex: 0 0 10%;/*定义每个盒子的放大缩小比例和每个小弹性盒的宽度*/
+				background: #FFFFFF;
+				border: 1px solid red;
+				height: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>01</li>
+			<li>02</li>
+			<li>03</li>
+			<li>04</li>
+			<li>05</li>
+			<li>06</li>
+			<li>07</li>
+			<li>08</li>
+			<li>09</li>
+			<li>10</li>
+			<li>11</li>
+		</ul>
+	</body>
+</html>

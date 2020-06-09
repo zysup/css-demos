@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>圣杯布局</title>
+	<style type="text/css">
+		html,body{
+			height: 100%;
+		}
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+
+			line-height: 400px;
+		}
+
+		.holigrail {
+			display: flex;
+			flex-direction: column;
+			/*height: 500px;*/
+			min-height: 100vh;
+			/* min-height: 100%; */
+
+		}
+
+		header,
+		footer {
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			background: #008000;
+		}
+
+		.holigrail-body {
+			display: flex;
+			flex: 1;
+			text-align: center;
+		}
+
+		.holigrail-content {
+			flex: 1;
+			background: red;
+		}
+
+		.holigrail-nav {
+			width: 150px;
+			order: -1;
+			background: pink;
+		}
+
+		.holigrail-aside {
+			width: 280px;
+			background: blue;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="holigrail">
+		<header>hedaer</header>
+		<div class="holigrail-body">
+			<div class="left">导航</div>
+				<div class="center">主要栏目</div>
+				<div class="right">副栏目</div>
+				<nav class="holigrail-nav">nav<br />nav<br />nav<br />nav<br />nav<br />nav<br /></nav>
+				<main class="holigrail-content">main</main>
+			<aside class="holigrail-aside">aside</aside>
+
+		</div>
+		<footer>footer</footer>
+	</div>
+</body>
+
+</html>

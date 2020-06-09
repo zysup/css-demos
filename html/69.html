@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>水平垂直居中</title>
+		<style type="text/css">
+			*{padding: 0;margin: 0;}
+			/* 知道高宽，不用定位 */
+			.parent{width: 200px;height: 400px;background: red;overflow: hidden;}
+			/* .child{width: 100px;height: 100px;background: yellowgreen;margin-top: 150px;margin-left: 50px;} */
+			.child{width: 100px;height: 100px;background: yellowgreen;position: relative;}
+			/* 知道高宽，不用定位 */
+			/*.parent{width: 200px;height: 200px;background: red;padding:150px;}
+			.child{width: 200px;height: 200px;background: yellowgreen;}*/
+			/* 知道高宽，用定位 */
+			/*.parent{width: 500px;height: 500px;background: red;position: relative;}
+			.child{width: 200px;height: 200px;background: yellowgreen;position: absolute;left:150px;top:150px;}*/
+			/* 知道高宽，用定位 */
+			/*.parent{width: 500px;height: 500px;background: red;position: relative;}
+			.child{width: 200px;height: 200px;background: yellowgreen;position: absolute;top:50%;left:50%;margin-left:-100px;margin-top:-100px;}*/
+			/* 不知高宽，用定位 */
+			/*.parent{width: 500px;height: 500px;background: red;position: relative;}
+			.child{width: 200px;height: 200px;background: yellowgreen;position: absolute;left:0;right: 0;top:0;bottom: 0;margin: auto;}*/
+			/* 不知高宽,弹性盒 */
+			/*.parent{width: 500px;height: 500px;background: red;display: flex;justify-content: center;align-items: center;}
+			.child{width: 200px;height: 200px;background: yellowgreen;}*/
+			/* 不知高宽,弹性盒 */
+			/* .parent{width: 500px;height: 500px;background: red;display: flex;}
+			.child{width: 200px;height: 200px;background: yellowgreen;margin:auto} */
+			/* 不知高宽，用定位 */
+			/* .parent{width: 500px;height: 500px;background: red;position: relative;}
+			.child{width: 200px;height: 200px;background: yellowgreen;position: absolute;top:50%;left:50%;transform: translate(-50%,-50%);} */
+			
+		</style>
+	</head>
+	<body>
+		<!--
+			一个500*500的大盒子里，放一个200*200的小盒子，让小盒子在大盒子里面水平垂直居中，请写出7种方法。
+		-->
+		<div class="parent">
+			<div class="child"></div>
+		</div>
+	</body>
+</html>

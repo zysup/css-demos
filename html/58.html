@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clip-path动画</title>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+            background: deeppink;
+            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+            animation: change 2s cubic-bezier(0.13, 1.29, 0.96, 2.2) infinite alternate;
+        }
+
+        @keyframes change {
+            50% {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../img/girl.jpg" alt="">
+</body>
+
+</html>

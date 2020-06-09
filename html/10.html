@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雨滴效果</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+        }
+
+        #content {
+            position: relative;
+            height: 100%;
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+
+        .raindrop {
+            position: absolute;
+            width: 6px;
+            height: 8px;
+            background-color: #99a9bf;
+            clip-path: ellipse(10% 30% at 50% 50%);
+            transform: scale(8);
+            opacity: 0;
+            animation: move 1.2s cubic-bezier(0.54, 0, 0.18, 0.34) infinite;
+        }
+
+        @keyframes move {
+            0% {
+                opacity: 0;
+            }
+
+            40% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate3d(10px, 100vh, -10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <div class="raindrop"></div>
+    </div>
+</body>
+<script>
+    let content = document.getElementById("content");
+    let num = 0;
+    //雨滴的分布
+    for (let i = 0; i < 30; i++) {
+        let lefts = Math.floor(Math.random() * 5 + 2);
+        let delay = Math.floor(Math.random() * 5 + 2);
+        num += lefts;
+        let div = document.createElement("div");
+        div.setAttribute("class", "raindrop");
+        let sty = document.getElementsByClassName("raindrop");
+        sty[i].style.left = `${num}%`;
+        sty[i].style.top = `${lefts}%`;
+        //  延迟时间 
+        sty[i].style.animationDelay = `${delay/10}s`;
+        content.appendChild(div);
+    }
+</script>
+
+</html>

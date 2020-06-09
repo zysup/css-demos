@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>轮播图</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		.boss {
+			/*height:550px;width: 100%; */
+			position: relative;
+		}
+
+		.boss .img {
+			width: 100%;
+			height: 550px;
+			overflow: hidden;
+		}
+
+		img {
+			width: 100%;
+			height: 550px;
+		}
+
+		.nav {
+			position: absolute;
+			bottom: 10px;
+			left: 46%;
+		}
+
+		.nav a {
+			width: 20px;
+			height: 20px;
+			display: block;
+			line-height: 20px;
+			text-align: center;
+			background: red;
+			margin-right: 8px;
+			float: left;
+		}
+
+		.nav a:hover {
+			background: #232323;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="boss">
+		<div class="nav">
+			<a href="#jd1">1</a>
+			<a href="#jd2">2</a>
+			<a href="#jd3">3</a>
+		</div>
+		<div class="img">
+			<img id="jd1" src="../img/jd1.jpg" />
+			<img id="jd2" src="../img/jd2.jpg" />
+			<img id="jd3" src="../img/jd3.jpg" />
+		</div>
+	</div>
+</body>
+
+</html>

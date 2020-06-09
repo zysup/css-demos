@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>进度条</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        div {
+            --c: blue;
+            --l: 50%;
+            height: 6px;
+            border-radius: 20px;
+            background-color: silver;
+            background-image: radial-gradient(closest-side circle at var(--l), var(--c), var(--c) 100%, transparent), linear-gradient(blue, blue);
+            background-size: 100%, var(--l);
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
