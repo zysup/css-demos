@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS计数器</title>
+    <style>
+        body {
+            counter-reset: row;
+        }
+
+        section {
+            overflow: hidden;
+            margin: 3px;
+            font-size: 20px;
+            line-height: 50px;
+            text-align: center;
+            color: #ff0909;
+            background: #415481;
+            counter-reset: box;
+            counter-increment: row;
+        }
+
+        section:before {
+            content: "row:"counter(row);
+            float: left;
+        }
+
+        div {
+            width: 50px;
+            height: 50px;
+            margin: 3px;
+            background: aqua;
+            float: left;
+            counter-increment: box;
+        }
+
+        div:before {
+            content: counter(row)"."counter(box);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div></div>
+        <div></div>
+    </section>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+
+</html>

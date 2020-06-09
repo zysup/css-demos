@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小球运动</title>
+    <style>
+        .boss {
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            border: 5px solid blue;
+            position: relative;
+        }
+
+        .ball {
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            background-color: red;
+            position: absolute;
+            animation: x 1.5s ease infinite alternate, y 1.5s ease infinite alternate;
+        }
+
+        @keyframes x {
+            from {
+                left: 0;
+
+            }
+
+            to {
+                left: calc(100% - 20px);
+            }
+        }
+
+        @keyframes y {
+            from {
+                top: 0;
+
+            }
+
+            to {
+                top: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boss">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>

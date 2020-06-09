@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天狗吃月</title>
+    <style>
+        body {
+            background: aqua;
+        }
+
+        div {
+            margin: 50px;
+            font-size: 20px;
+            width: 5em;
+            height: 5em;
+            background: transparent;
+            border-radius: 50%;
+            border: 1px solid;
+            box-shadow: 5em 0 0 lightyellow;
+            animation: move 5s linear infinite alternate-reverse;
+        }
+
+        @keyframes move {
+            to {
+                box-shadow: -5em 0 0 lightyellow;
+                transform: translate(10em, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

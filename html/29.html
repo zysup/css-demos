@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object-position</title>
+    <style>
+        span{
+            /* display: inline-block; */
+            transform: scale(.8);
+        }
+        input {
+            transform: scale(2.5);
+            /* 只是用来放大复选框大小 */
+            margin: 10px 5px;
+            color: #fff;
+        }
+
+        img {
+            width: 800px;
+            height: 600px;
+            /* transition: 0s; */
+        }
+
+        /* css选择器锁定复选框被选中时的状态 */
+        input:checked+br+img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            object-position: left top;
+            object-position: center center;
+            transition: width 2s, height 4s;
+        }
+    </style>
+</head>
+
+<body>
+    <span>勾选裁剪图片</span>  <input type="checkbox" />
+    <br />
+    <img src="../img/girl.jpg" alt="Random" />
+
+</body>
+
+</html>
