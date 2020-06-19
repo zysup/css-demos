@@ -1,5 +1,4 @@
 # <center>CSS练习<center>
----
 下面是markdown语法练习
 # 我是一级标题
 ## 我是二级标题
@@ -44,7 +43,7 @@
 `npm run serve`
 ```
 function fn(){
-    console.log('整个牛项目')
+    console.log('我要整个牛项目')
 }
 fn();
 ```
