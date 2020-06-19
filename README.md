@@ -13,9 +13,12 @@
 ***我是倾斜加粗文字***  
 ~~我是加删除线的文字~~  
 ***
-![css](https://cdn.lynda.com/course/5038219/5038219-637268801558120619-16x9.jpg '图片title')    
+![css](https://cdn.lynda.com/course/5038219/5038219-637268801558120619-16x9.jpg 'https://cdn.lynda.com/course/5038219/5038219-637268801558120619-16x9.jpg')    
 
-![css](./img/css.png '图片title')
+![css](./img/css.png './img/css.png')
+
+![css](https://github.com/Zhang998/css_exercise/blob/master/img/css.png 'https://github.com/Zhang998/css_exercise/blob/master/img/css.png')
+
 ***
 [百度](https://www.baidu.com/)
 ***
