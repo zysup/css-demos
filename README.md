@@ -44,7 +44,7 @@
 `npm run serve`
 ```
 function fn(){
-    console.log('整个牛项目')
+    console.log('我要整个牛项目')
 }
 fn();
 ```
