@@ -1,0 +1,22 @@
+{
+  "name": "css_exercise",
+  "version": "1.0.0",
+  "description": "CSS练习",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zhang998/css_exercise.git"
+  },
+  "keywords": [
+    "CSS"
+  ],
+  "author": "Zhang998",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zhang998/css_exercise/issues"
+  },
+  "homepage": "https://github.com/Zhang998/css_exercise#readme"
+}
