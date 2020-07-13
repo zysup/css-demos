@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>字体反扒</title>
     <style type="text/css">
@@ -8,19 +9,42 @@
             src: url(../statics/font/mpepc5unpb.woff);
         }
 
+        @font-face {
+            font-family: myFirstFont;
+            src: local("Times New Roman");
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: myFirstFont;
+            src: local(Consolas);
+            font-weight: bold;
+        }
         div {
             font-family: test;
             font-size: 80px;
             text-align: center;
             margin: 200px 0;
         }
+        p:nth-child(2) {
+            font-family: myFirstFont;
+            font-weight: bold;
+        }
+
+        p:nth-child(3) {
+            font-family: myFirstFont;
+            font-weight: normal;
+        }
     </style>
 </head>
 
 <body>
     <div>
-        0123456789
+        <p>0123456789</p>
+        <p>abcdef</p>
+        <p>abcdef</p>
     </div>
+
 </body>
 
 </html>
