@@ -5,11 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iframe</title>
+    <style>
+        #abc {
+            width: 600px;
+            height: 400px;
+            border: 2px solid blue;
+            position: relative;
+        }
+
+        #abc::after {
+            content: '';
+            display: block;
+            position: absolute;
+            /* width: 100px;
+            height: 100px; */
+            border: 2px solid red;
+            left: -10px;
+            right: -10px;
+            top: -10px;
+            bottom: -10px;
+            pointer-events: none;
+
+        }
+    </style>
 </head>
 
 <body>
-    <iframe frameborder="20" src="https://v.qq.com/txp/iframe/player.html?vid=c0961u250bv" allowfullscreen="true"
-        width="600px" height="400px"></iframe>
+    <div id="abc">
+        <iframe frameborder="20" src="https://v.qq.com/txp/iframe/player.html?vid=c0961u250bv" allowfullscreen="true"
+            width="600px" height="400px"></iframe>
+    </div>
 </body>
 
 </html>
