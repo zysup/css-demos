@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字上标和下标</title>
+    <style>
+        .sup {
+            vertical-align: super;
+            color: red;
+            font-size: 9px;
+            font-family: Arial, Helvetica, sans-serif;
+            /* margin: 10px 0px 0px 0px; */
+            background-color: #ccc;
+            border-radius: 20%;
+
+        }
+
+        .sub {
+            vertical-align: sub;
+            color: red;
+            font-size: 9px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px 0px 0px 0px
+        }
+        .top{
+            font-size: 9px;
+            vertical-align: top;
+        }
+        .bottom{
+            font-size: 9px;
+            vertical-align: bottom;
+
+        }
+        .text-top{
+            font-size: 9px;
+            vertical-align:text-top;
+
+        }
+        .text-bottom{
+            font-size: 9px;
+            vertical-align:text-bottom;
+
+        }
+        .em{
+            font-size: 9px;
+            vertical-align:1em;
+
+        }
+        .em2{
+            font-size: 9px;
+            vertical-align:20%;
+
+        }
+
+        .icon {
+            display: inline-block;
+            /* size, color, etc. */
+        }
+
+        .middle {
+            vertical-align: middle;
+        }
+        p{
+            font-size: 32px;
+            line-height: 2;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    文字上标<span class="sup"> (super)</span><br>
+    文字下标<span class="sub"> sub</span><br>
+    <p>
+        <img src="../img/hy_03.jpg" alt="" class="icon middle"> 
+        我是文字
+        <!-- <span class="top"> (top)</span><span class="bottom"> (bottom)</span>
+        <span class="sup"> (super)</span><span class="sub"> (sub)</span>
+        <span class="text-top"> (text-top)</span><span class="text-bottom"> (text-bottom)</span> -->
+    </p>
+    <p>
+        <img src="../img/hy_03.jpg" alt="" class="icon middle">  我是文字
+    </p>
+    <p>
+        <span class="middle">我是文字</span> 
+        <img src="../img/hy_03.jpg" alt="" class="icon middle"> 
+        <span class="middle">我是文字</span>
+        <span class="top"> (top)</span><span class="bottom"> (bottom)</span>
+    </p>
+    <p>
+        我是文字 <img src="../img/hy_03.jpg" alt="" class="icon middle"> 我是文字
+    </p>
+    <p>
+        我是文字 <img src="../img/hy_03.jpg" alt="" class="icon middle"> 我是文字<span class="sup"> (super)</span><span class="sub"> (sub)</span>
+    </p>
+    <p>
+        我是文字 <img src="../img/hy_03.jpg" alt="" class="icon middle"> 我是文字<span class="text-top"> (text-top)</span><span class="text-bottom"> (text-bottom)</span>
+    </p>
+    <p>
+        我是文字 <img src="../img/hy_03.jpg" alt="" class="icon middle"> 我是文字<span class="em"> (em)</span><span class="em2"> (20%)</span>
+    </p>
+</body>
+
+</html>
