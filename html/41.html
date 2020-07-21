@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+</head>
+
+<body>
+    <canvas id="mycanvas" width="300" height="150" style="border:1px solid red;">
+        不支持canvas
+    </canvas>
+</body>
+<script>
+    var cvs = document.getElementById('mycanvas');
+    var ctx = cvs.getContext('2d');
+
+    ctx.fillStyle = "#ff00ff55";
+    ctx.fillRect(0, 0, 150, 75);
+
+    ctx.moveTo(0, 0);
+    ctx.lineTo(200, 100);
+    ctx.stroke();
+
+    ctx.font = "30px serif";
+    ctx.fillText("Hello World", 10, 50);
+</script>
+
+</html>
