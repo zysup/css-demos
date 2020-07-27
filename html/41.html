@@ -9,8 +9,7 @@
 
 <body>
     <canvas id="mycanvas" width="300" height="150" style="border:1px solid red;">
-        你的浏览器目前
-        不支持canvas
+        你的浏览器目前不支持canvas
     </canvas>
 </body>
 <script>
@@ -22,6 +21,8 @@
 
     ctx.moveTo(0, 0);
     ctx.lineTo(200, 100);
+    ctx.lineTo(250, 100);
+    ctx.lineTo(0, 0);
     ctx.stroke();
 
     ctx.font = "30px serif";
