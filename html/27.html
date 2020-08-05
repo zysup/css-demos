@@ -44,5 +44,22 @@
     须晴日，看红装素裹，分外妖娆。 江山如此多娇，引无数英雄竞折腰。 惜秦皇汉武，略输文采；唐宗宋祖，稍逊风骚。
     一代天骄，成吉思汗，只识弯弓射大雕。 俱往矣，数风流人物，还看今朝。
 </body>
+<script>
+    if (window.matchMedia('(max-width: 320px)').matches) {
+        console.log('当前窗口宽度最大320px');
+    } else if (window.matchMedia('(max-width: 375px) and (min-width: 320px)').matches) {
+        console.log('当前窗口宽度在320px和375px之间');
+    } else {
+        console.log('当前窗口宽度在至少是375px');
+    }
+    var mql = window.matchMedia('(max-width: 375px)');
+    mql.onchange = function (e) {
+        if (e.matches) {
+            console.log('%c视口小于375px','color:blue');
+        } else {
+            console.log('%c视口超过了375px!!!','color:red');
+        }
+    }
+</script>
 
 </html>
