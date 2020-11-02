@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图渐变</title>
+    <style>
+        .boss{
+            width: 500px;
+            height: 200px;
+            background: url(../img/animal01.jpg) no-repeat center / 100% 100%;
+            transition: background-image 1s;
+        }
+        .boss:hover,
+        .boss:visited
+        {
+            background-image: url(../img/animal02.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div class="boss"><a href="https://www.zhangxinxu.com/wordpress/2020/08/background-image-animation/">颠覆，原来background-image也是支持CSS动画的</a></div>
+</body>
+</html>
