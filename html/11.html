@@ -6,6 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flex布局</title>
     <style>
+        .container {
+            display: flex;
+            border: 2px dashed crimson;
+        }
+
+        .container item {
+            border: 2px solid deepskyblue;
+        }
+
+        .zhang {
+            flex: 0 2 100px;
+        }
+
+        .xin {
+            flex: 0 1 100px;
+        }
+
+        .xu {
+            flex: 0 1 100px;
+        }
+
+        .shuai {
+            flex: 3 0 20px;
+        }
+
+        .ge {
+            flex: 2 0 20px;
+        }
+
         ul {
             display: flex;
             background-color: #e80000;
@@ -20,8 +49,8 @@
             list-style: none;
         }
 
-        li:nth-child(1) {
-            margin: auto;
+        li:nth-child(2) {
+            margin-left: auto;
         }
 
         div.boss {
@@ -34,14 +63,16 @@
             background-image: url(../img/girl.jpg);
             background-size: 200px;
             background-repeat: round;
-            resize:horizontal;
+            resize: horizontal;
             overflow: scroll;
         }
-        ::-webkit-scrollbar{
+
+        ::-webkit-scrollbar {
             /* width: 0;
             height: 0; */
             background-color: blue;
         }
+
         .boss>div {
             border: 1px solid;
             padding: 1%;
@@ -70,10 +101,11 @@
         }
 
         @keyframes move {
-            from{
+            from {
 
                 background-size: 0;
             }
+
             to {
                 background-size: 50%;
             }
@@ -129,9 +161,15 @@
 </head>
 
 <body>
+    <div class="container">
+        <item class="zhang">范张</item>
+        <item class="xin">范鑫</item>
+        <item class="xu">范旭</item>
+        <item class="shuai">范帅</item>
+        <item class="ge">范哥</item>
+    </div>
     <br>
-    <br>
-    <br>
+    <br><br><br><br>
     <ul>
         <li class="item1">item:01</li>
         <li class="item2">item:02</li>
@@ -140,7 +178,7 @@
         <li class="item5">item:05</li>
     </ul>
     <div class="boss"></div>
-    <br>
+    <br><br><br>
     <div class="b"></div>
     <div id="container">
         <div class="item item-1">1</div>
@@ -153,6 +191,7 @@
         <div class="item item-8">8</div>
         <div class="item item-9">9</div>
     </div>
+
 </body>
 
 </html>
