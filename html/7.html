@@ -31,7 +31,8 @@
             border-radius: 0 100% 100% 0/50%;
             background-color: inherit;
             transform-origin: left;
-            transform: rotate(.2turn);
+            /* transform: rotate(.2turn); */
+            transform: var(--val);
         }
         .pie p{
             margin: 0;
@@ -49,9 +50,17 @@
 <body>
     <div id="boss">
     </div>
-    <div class="pie">
+    <div class="pie" style="--val:rotate(.2turn)">
         <p></p>
     </div>
 </body>
+    <script>
+        var pie = document.getElementsByClassName('pie')[0]
+        console.log(pie.style.getPropertyValue('--val'));
+        setTimeout(() => {
+            pie.style.setProperty('--val',"rotate(.4turn)")
+            console.log(pie.style.getPropertyValue('--val'));
+        }, 5000);
+    </script>
 
 </html>
