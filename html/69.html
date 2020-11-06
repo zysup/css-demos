@@ -24,7 +24,7 @@
 				background-color: aqua;
 			} */
 			/* 知道高宽，不用定位 */
-			.parent{
+			/* .parent{
 				line-height: 200px;
 				height: 200px;
 				text-align: center;
@@ -34,7 +34,9 @@
 				line-height: 1;
 				display: inline-block;
 				vertical-align: middle;
-			}
+				border: 1px solid red;
+				overflow: hidden;
+			} */
 			/* 不知高宽，用定位 */
 			/*.parent{width: 500px;height: 500px;background: red;position: relative;}
 			.child{width: 200px;height: 200px;background: yellowgreen;position: absolute;left:0;right: 0;top:0;bottom: 0;margin: auto;}*/
@@ -42,8 +44,8 @@
 			/*.parent{width: 500px;height: 500px;background: red;display: flex;justify-content: center;align-items: center;}
 			.child{width: 200px;height: 200px;background: yellowgreen;}*/
 			/* 不知高宽,弹性盒 */
-			/* .parent{width: 500px;height: 500px;background: red;display: flex;}
-			.child{width: 200px;height: 200px;background: yellowgreen;margin:auto} */
+			.parent{width: 500px;height: 500px;background: red;display: flex;}
+			.child{width: 200px;height: 200px;background: yellowgreen;margin:auto}
 			/* 不知高宽，用定位 */
 			/* .parent{width: 500px;height: 500px;background: red;position: relative;}
 			.child{width: 200px;height: 200px;background: yellowgreen;position: absolute;top:50%;left:50%;transform: translate(-50%,-50%);} */
@@ -56,6 +58,7 @@
 		-->
 		<div class="parent">
 			<div class="child">让小盒子在大盒子里面水平垂直居中</div>
+			<!-- <div class="child">让小盒子在大盒子里面水平垂直居中</div> -->
 		</div>
 	</body>
 </html>
