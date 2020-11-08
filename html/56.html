@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>铜钱</title>
     <style>
-        div{
+        div:nth-child(1){
             margin: 100px;
             width: 100px;
             height: 100px;
@@ -13,9 +13,28 @@
             box-shadow: 0 0 0 30px #6d5514 inset;
             clip-path:circle(50%);
         }
+        div:nth-child(2){
+            margin: 100px;
+            width: 100px;
+            height: 100px;
+            /* border-radius: 100%; */
+            box-shadow: 0 0 0 30px #6d5514 inset;
+            clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+        }
+        div:nth-child(3){
+            margin: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(190, 190, 82);
+            /* border-radius: 100%; */
+            /* box-shadow: 0 0 0 30px #6d5514 inset; */
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
     </style>
 </head>
 <body>
+    <div></div>
+    <div></div>
     <div></div>
 </body>
 </html>
