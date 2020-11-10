@@ -50,7 +50,7 @@
         }
 
         li:nth-child(2) {
-            margin-left: auto;
+            margin: auto;
         }
 
         div.boss {
@@ -157,6 +157,19 @@
         .item-9 {
             background-color: #4dc7ec;
         }
+        
+        .con2{
+            display: flex;
+            border:1px solid blue;
+        }
+        .con2 div:nth-child(1){
+            flex:0 0 3rem;
+            background-color: aquamarine;
+        }
+        .con2 div:nth-child(2){
+            flex:1;
+            background-color: #66666666;
+        }
     </style>
 </head>
 
@@ -170,6 +183,10 @@
     </div>
     <br>
     <br><br><br><br>
+    <div class="con2">
+        <div>123</div>
+        <div>456</div>
+    </div>
     <ul>
         <li class="item1">item:01</li>
         <li class="item2">item:02</li>
