@@ -1,48 +1,175 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>loading动画</title>
-		<style type="text/css">
-			*{padding: 0;margin: 0;}
-			.boss{width: 40px;height:40px;/*border:1px solid #000;*/position: absolute;left:0;right: 0;top:0;bottom: 0;margin: auto;/*border:1px solid;*/}
-			.boss>div{width: 40px;height: 40px;}
-			/* .boss>div:nth-child(1){border:1px solid blue;} */
-			.boss>div:nth-child(2){position: absolute;top:0;left:0;transform: rotate(45deg);}
-			.boss>div>span{display:block;width:10px;height:10px;background:orange;border-radius: 50%;position: absolute;animation: play 1.5s infinite;}
-			.boss>div>span:nth-child(1){top:0;left:0;}
-			.boss>div>span:nth-child(2){top:0;right:0;}
-			.boss>div>span:nth-child(3){bottom:0;left:0;}
-			.boss>div>span:nth-child(4){bottom:0;right:0;}
-			@keyframes play{
-				0%{transform: scale(0);}
-				50%{transform: scale(1);}
-				100%{transform: scale(0);}
+
+<head>
+	<meta charset="UTF-8">
+	<title>loading动画</title>
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		.boss {
+			width: 40px;
+			height: 40px;
+			position: relative;
+			margin: 100px auto;
+		}
+
+		.boss>div {
+			width: 40px;
+			height: 40px;
+		}
+
+		/* .boss>div:nth-child(1){border:1px solid blue;} */
+		.boss>div:nth-child(2) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform: rotate(45deg);
+		}
+
+		.boss>div>span {
+			display: block;
+			width: 10px;
+			height: 10px;
+			background: orange;
+			border-radius: 50%;
+			position: absolute;
+			animation: play 1.5s infinite;
+		}
+
+		.boss>div>span:nth-child(1) {
+			top: 0;
+			left: 0;
+		}
+
+		.boss>div>span:nth-child(2) {
+			top: 0;
+			right: 0;
+		}
+
+		.boss>div>span:nth-child(3) {
+			bottom: 0;
+			left: 0;
+		}
+
+		.boss>div>span:nth-child(4) {
+			bottom: 0;
+			right: 0;
+		}
+
+		@keyframes play {
+			0% {
+				transform: scale(0);
 			}
-			.boss>div:nth-child(1) span:nth-child(1){animation-delay: -0.2s;}
-			.boss>div:nth-child(2) span:nth-child(1){animation-delay: -0.4s;}
-			.boss>div:nth-child(1) span:nth-child(2){animation-delay: -0.6s;}
-			.boss>div:nth-child(2) span:nth-child(2){animation-delay: -0.8s;}
-			.boss>div:nth-child(1) span:nth-child(4){animation-delay: -1s;}
-			.boss>div:nth-child(2) span:nth-child(4){animation-delay: -1.2s;}
-			.boss>div:nth-child(1) span:nth-child(3){animation-delay: -1.4s;}
-			.boss>div:nth-child(2) span:nth-child(3){animation-delay: -1.6s;}
-		</style>
-	</head>
-	<body>
-		<div class="boss">
-			<div class="box1">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<div class="box2">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
+
+			50% {
+				transform: scale(1);
+			}
+
+			100% {
+				transform: scale(0);
+			}
+		}
+
+		.boss>div:nth-child(1) span:nth-child(1) {
+			animation-delay: -0.2s;
+		}
+
+		.boss>div:nth-child(2) span:nth-child(1) {
+			animation-delay: -0.4s;
+		}
+
+		.boss>div:nth-child(1) span:nth-child(2) {
+			animation-delay: -0.6s;
+		}
+
+		.boss>div:nth-child(2) span:nth-child(2) {
+			animation-delay: -0.8s;
+		}
+
+		.boss>div:nth-child(1) span:nth-child(4) {
+			animation-delay: -1s;
+		}
+
+		.boss>div:nth-child(2) span:nth-child(4) {
+			animation-delay: -1.2s;
+		}
+
+		.boss>div:nth-child(1) span:nth-child(3) {
+			animation-delay: -1.4s;
+		}
+
+		.boss>div:nth-child(2) span:nth-child(3) {
+			animation-delay: -1.6s;
+		}
+
+		.boss2 {
+			width: 90px;
+			height: 30px;
+			border: 1px solid;
+			display: flex;
+		}
+
+		.boss2>span {
+			display: block;
+			flex: 1;
+			background-color: aqua;
+			border-radius: 50%;
+			animation: play2 3s infinite;
+			margin: 6px;
+		}
+
+		@keyframes play2 {
+			0% {
+				transform: scale(0.3);
+			}
+
+			50% {
+				transform: scale(1);
+			}
+
+			100% {
+				transform: scale(0.3);
+			}
+		}
+
+		.boss2>span:nth-child(1) {
+			animation-delay: -3s;
+		}
+
+		.boss2>span:nth-child(2) {
+			animation-delay: -2s;
+		}
+		.boss2>span:nth-child(3) {
+			animation-delay: -1s;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="boss">
+		<div class="box1">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
 		</div>
-	</body>
+		<div class="box2">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<br>
+	<div class="boss2">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</body>
+
 </html>
