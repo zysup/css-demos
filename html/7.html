@@ -31,7 +31,7 @@
             border-radius: 0 100% 100% 0/50%;
             background-color: inherit;
             transform-origin: left;
-            /* transform: rotate(.2turn); */
+            transform: rotate(.2turn);
             transform: var(--val);
         }
         .pie p{
@@ -40,9 +40,17 @@
             width: 80px;
             height: 80px;
             border-radius: 50%;
-            top:10px;
-            left: 10px;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
             background-color: #fff;
+        }
+        .boss2{
+            width: 100px;
+            height: 200px;
+            border: 1px solid;
+            border-radius: 0 100% 100% 0/50%;
+
         }
     </style>
 </head>
@@ -53,6 +61,7 @@
     <div class="pie" style="--val:rotate(.2turn)">
         <p></p>
     </div>
+    <div class="boss2"></div>
 </body>
     <script>
         var pie = document.getElementsByClassName('pie')[0]
