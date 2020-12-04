@@ -20,22 +20,28 @@
             src: local(Consolas);
             font-weight: bold;
         }
+
         @font-face {
             font-family: yugong;
             src: url(../statics/font/新愚公迷茫体.ttf);
             font-weight: normal;
         }
+
         @font-face {
             font-family: yugong;
             src: url(../statics/font/mpepc5unpb.woff);
             font-weight: bold;
         }
+
+
         div {
-            font-family: test;
-            /* font-size: 80px; */
+            font-family: test!important;
+            font-size: 32px;
             text-align: center;
             margin: 200px 0;
+            color: green;
         }
+
         p:nth-child(2) {
             font-family: myFirstFont;
             font-weight: bold;
@@ -44,39 +50,45 @@
         p:nth-child(3) {
             font-family: myFirstFont;
             font-weight: normal;
-            font-style: italic;
         }
+
         p:nth-child(4) {
-            font-family: yugong;
+            font-family: yugong!important;
             text-align: center;
-            /* font-weight: bold; */
+            font-weight: 500;
             /* font-size: 32px; */
             /* font-weight:900;
             font-style: italic; */
         }
+
         p:nth-child(5) {
             font-family: "新愚公迷茫体";
             text-align: center;
             font-weight: bold;
-            /* font-size: 32px; */
-            /* font-weight:900;
-            font-style: italic; */
         }
+
         p:nth-child(6) {
             font-family: "wmanimals1";
             text-align: center;
             font-weight: bold;
-            font-size: 44px;
-            color:burlywood;
-            /* font-weight:900;
-            font-style: italic; */
+            font-size: 32px;
+            color: burlywood;
+        }
+        p:nth-child(7) {
+            font-family: "华文楷体";
+        }
+        p:nth-child(8) {
+            font-family: "行楷-简";
+        }
+        p:nth-child(9) {
+            font-family: "宋体-简";
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <p>0123456789你好<span>123</span></p>
+    <div id="boss">
+        <p>0123456789你好</p>
         <p>abcdef</p>
         <p>abcdef</p>
         <p>曲江春望怀江南故人123
@@ -87,9 +99,10 @@
             此时愁望情多少，万里春流绕钓矶。
         </p>
         <p>此时愁望情多少，万里春流绕钓矶。sdaf</p>
-        <p>ABCDEFGHIJKLMNOPKRSTUVWXYZ
-            abcdefghijklmnopkrstuvwxyz
-            1234567890</p>
+        <p>ABCDEFGHIJKLMNOPKRSTUVWXYZabcdefghijklmnopkrstuvwxyz1234567890</p>
+        <p>此时愁望情多少，万里春流绕钓矶</p>
+        <p>此时愁望情多少，万里春流绕钓矶</p>
+        <p>此时愁望情多少，万里春流绕钓矶</p>
     </div>
 
 </body>

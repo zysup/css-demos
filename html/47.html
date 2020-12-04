@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>彩虹</title>
     <style>
-        div{
+        .b1{
             width: 200px;
             height: 200px;
             border-radius: 50%;
@@ -15,9 +15,39 @@
             0 0 0 25px inset yellow;
             clip-path: polygon(0 0, 100% 0, 100% 50%,0 50%);
         }
+        .b2{
+            display: inline-block;
+            width: 4em;
+            width: 200px;
+            height: 200px;
+            background-color: #ff5050;
+            clip-path: circle(50% at 100% 50%);
+        }
+        .b2{
+            display: inline-block;
+            width: 4em;
+            width: 200px;
+            height: 200px;
+            background-color: #ff5050;
+            clip-path: circle(50% at 100% 50%);
+            vertical-align: middle;
+        }
+        .b3{
+            display: inline-block;
+            width: 4em;
+            width: 100px;
+            height: 200px;
+            background-color: #ff5050;
+            border-radius: 50% 100%;
+            border-radius: 0 100% 100% 0/50%;
+            vertical-align: middle; 
+        }
     </style>
 </head>
 <body>
-    <div></div>
+    <div class="b1"></div>
+    <div class="b2">天天向上</div>
+    <div class="b3">天天向上</div>
+    <div class="b2">天天向上</div>
 </body>
 </html>
