@@ -1,29 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>两栏布局</title>
     <style>
-        html,body{
+        html,
+        body {
             margin: 0;
             height: 100%;
         }
-        .b1{
+
+        .b1 {
             height: 200px;
             width: 200px;
             float: left;
             background-color: red;
         }
-        .b2{
+
+        .b2 {
             overflow: hidden;
             background-color: blue;
             height: 100%;
         }
+
+        .left {
+            width: 200px;
+            background-color: red;
+            float: left;
+        }
+
+        .right {
+            background-color: green;
+            margin-left: 200px; 
+        }
     </style>
 </head>
+
 <body>
     <div class="b1">这是super得更改666</div>
     <div class="b2">111111111111111111111111111111</div>
+
+    <div class="left">
+        <h1>Left Side</h1>
+        <p>我是左侧栏</p>
+    </div>
+    <div class="right">
+        <h1>Right Side</h1>
+        <p>我是右侧栏</p>
+    </div>
 </body>
+
 </html>
