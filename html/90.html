@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>line-height实现居中</title>
+    <style>
+        div {
+            line-height: 150px;
+            font-size: 0;
+            border: 1px dashed #cccccc;
+        }
+
+        span {
+            line-height: 1.3em;
+            font-size: 20px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>这里是高度为150像素的标签内的多行文字，文字大小为20像素。<br>
+            这里是第二行，用来测试多行的显示效果。</span>
+    </div>
+</body>
+
+</html>
