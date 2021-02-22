@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>渐变边框和边框动画</title>
+    <style>
+        *{
+            color: red;
+        }
+        .box {
+            width: 200px;
+            height: 150px;
+            border: 2px dashed #cd0000;
+            box-sizing: border-box;
+        }
+
+        @supports (-webkit-mask: none) or (mask: none) {
+            .box {
+                border: none;
+                background: linear-gradient(to bottom, #34538b, #cd0000) no-repeat;
+                -webkit-mask-image: linear-gradient(to right, #000 6px, transparent 6px), linear-gradient(to bottom, #000 6px, transparent 6px), linear-gradient(to right, #000 6px, transparent 6px), linear-gradient(to bottom, #000 6px, transparent 6px);
+                -webkit-mask-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+                -webkit-mask-position: 0 0, 0 0, 0 100%, 100% 0;
+                -webkit-mask-size: 8px 2px, 2px 8px, 8px 2px, 2px 8px;
+                /* 合并写法 */
+                mask: linear-gradient(to right, #000 6px, transparent 6px) repeat-x,
+                    linear-gradient(to bottom, #000 6px, transparent 6px) repeat-y,
+                    linear-gradient(to right, #000 6px, transparent 6px) repeat-x 0 100%,
+                    linear-gradient(to bottom, #000 6px, transparent 6px) repeat-y 100% 0;
+                mask-size: 8px 2px, 2px 8px, 8px 2px, 2px 8px;
+            }
+        }
+
+        .box2 {
+            width: 100px;
+            background: repeating-linear-gradient(135deg, transparent, transparent 3px, #000 3px, #000 8px);
+            animation: shine 1s infinite linear;
+            overflow: hidden;
+        }
+
+        .content {
+            height: 76px;
+            margin: 1px;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        @keyframes shine {
+            0% {
+                background-position: -1px -1px;
+            }
+
+            100% {
+                background-position: -12px -12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div><br>
+    <div class="box2">
+        <div class="content">内容占位</div>
+    </div>
+</body>
+
+</html>
