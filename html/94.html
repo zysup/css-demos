@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体子集</title>
+    <style>
+        @font-face {
+            font-family: 'webfont';
+            font-display: swap;
+            src: url('../statics/webfont/webfont.eot');
+            /* IE9 */
+            src: url('../statics/webfont/webfont.eot?#iefix') format('embedded-opentype'),
+                /* IE6-IE8 */
+                url('../statics/webfont/webfont.woff2') format('woff2'),
+                url('../statics/webfont/webfont.woff') format('woff'),
+                /* chrome、firefox */
+                url('../statics/webfont/webfont.ttf') format('truetype'),
+                /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+                url('../statics/webfont/webfont.svg#webfont') format('svg');
+            /* iOS 4.1- */
+        }
+
+        .web-font {
+            font-family: "webfont" !important;
+            font-size: 16px;
+            font-size: 32px;
+            /* font-style:normal; */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        i,em{
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <i class="web-font">
+        结婚就是给自由穿件棉衣，活动起来不方便，但会很温暖0123456789 <br>
+        经常结婚会不对身体不好的哦
+    </i><br>
+    <em class="web-font">
+        结婚就是给自由穿件棉衣，活动起来不方便，但会很温暖0123456789 <br>
+        经常结婚会不对身体不好的哦
+    </em>
+</body>
+
+</html>
