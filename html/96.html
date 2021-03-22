@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display:inline-block/text-align:justify下列表的两端对齐布局</title>
+    <style>
+        .box{
+            border: 1px solid;
+            text-align: justify;
+            font-size: 0;
+        }
+        [class^='itme']{
+            display: inline-block;
+            border: 1px solid sandybrown;
+            width: 300px;
+            vertical-align: top;
+            font-size: initial;
+        }
+        .inline-fix{
+            display: inline-block;
+            height: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="itme1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem obcaecati animi sunt dolor voluptatum maxime doloribus ab.</div>
+        <div class="itme2">Molestias temporibus porro ero deserunt earum.</div>
+        <div class="itme3">Distinctio quisquam pariatur, obcaecati cupiditate similique expedita ratione reiciendis consectetur doloremque voluptates vel ipsum impedit ea! Repudiandae.</div>
+        <div class="itme4">Voluptatem repudiandae distinctio in, officia ipsa earum rerum teatae excepturi odit, repudiandae sit aut.</div>
+        <div class="itme5">Laboriosam similique explicabo reiciendis voluptate officia voluptatibus consequatur saepe obcaecati voluptas ut veritatis, voluptatum magni quos neque!</div>
+        <div class="itme6">Culpa dolor quaerat voluptatem esse neque. Voluptatum blanditiis vitae ab doloribus ipsum dolore eum quo magni nostrum.</div>
+        <div class="itme7">Debitis sed iu recusandae tempore asperiores minus reprehenderit assumenda qui.</div>
+        <div class="inline-fix"></div>
+    </div>
+</body>
+</html>
