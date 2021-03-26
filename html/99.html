@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css加载中打点效果</title>
+    <style>
+        .dotting {
+            display: inline-block;
+            min-width: 2px;
+            min-height: 2px;
+            border-radius: 50%;
+            box-shadow: 2px 0 currentColor, 6px 0 currentColor, 10px 0 currentColor;
+            /* for IE9+, ..., 3个点 */
+            animation: dot 4s infinite step-start;
+            color: red;
+        }
+
+        @keyframes dot {
+            25% {
+                box-shadow: none;
+            }
+
+            /* 0个点 */
+            50% {
+                box-shadow: 2px 0 currentColor;
+            }
+
+            /* 1个点 */
+            75% {
+                box-shadow: 2px 0 currentColor, 6px 0 currentColor;
+                /* 2个点 */
+            }
+        }
+
+        .dotting2 {
+            display: inline-block;
+            width: 10px;
+            height: 2px;
+            padding:0 2px;
+            border-left: 2px solid currentColor;
+            border-right: 2px solid currentColor;
+            background-color: currentColor;
+            background-clip: content-box;
+            box-sizing: border-box;
+            animation: dot2 4s infinite step-start;
+        }
+
+
+        @keyframes dot2 {
+            25% {
+                border-color: transparent;
+                background-color: transparent;
+            }
+
+            /* 0个点 */
+            50% {
+                border-right-color: transparent;
+                background-color: transparent;
+            }
+
+            /* 1个点 */
+            75% {
+                border-right-color: transparent;
+            }
+
+            /* 2个点 */
+        }
+    </style>
+</head>
+
+<body>
+    订单提交中<span class="dotting"></span><br>
+    订单提交中<span class="dotting2"></span><br>
+</body>
+
+</html>
