@@ -8,6 +8,7 @@
     <style>
         html {
             font-size: 26.6667vw;
+            /* font-size: 100px; */
         }
         /* html {
             font-size: calc(100vw / 3.75)
@@ -17,6 +18,14 @@
             font-size: .16rem;
         }
     </style>
+    <script>
+        let root_size = parseFloat(getComputedStyle(document.documentElement)['font-size']) 
+        if (root_size > 130) {
+            document.documentElement.style.fontSize = '130px'
+        } else {
+            document.documentElement.style.fontSize = window.innerWidth * 100 / 375 + 'px'
+        }
+    </script>
 </head>
 
 <body>
