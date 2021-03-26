@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css计数器</title>
+    <style>
+        .reset {
+            padding-left: 20px;
+            counter-reset: wangxiaoer wangxiaosan;
+            /* counter-increment: wangxiaoer; */
+            /* counter-reset: wangxiaoer 1 wangxiaosan 2; */
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .counter:before {
+            content: counters(wangxiaoer, '-') '. ';
+            /* content: counter(wangxiaosan);
+            content: counter(wangxiaosan,lower-roman) ' '; */
+            counter-increment: wangxiaoer;
+            /* counter-increment: wangxiaosan; */
+            font-family: arial black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reset">
+        <div class="counter">我是王小二
+            <div class="reset">
+                <div class="counter">我是王小二的大儿子</div>
+                <div class="counter">我是王小二的二儿子
+                    <div class="reset">
+                        <div class="counter">我是王小二的二儿子的大孙子</div>
+                        <!-- <div class="counter" style="visibility: hidden;">我是王小二的二儿子的二孙子</div> -->
+                        <div class="counter" style="display: none;">我是王小二的二儿子的二孙子</div>
+                        <div class="counter">我是王小二的二儿子的小孙子</div>
+                    </div>
+                </div>
+                <div class="counter">我是王小二的三儿子</div>
+            </div>
+        </div>
+        <div class="counter">我是王小三</div>
+        <div class="counter">我是王小四
+            <div class="reset">
+                <div class="counter">我是王小四的大儿子</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
