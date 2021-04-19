@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>scroll-ansp-type滚动优化</title>
+  <style>
+    div {
+      width: 500px;
+      height: 300px;
+      overflow-x: auto;
+      white-space: nowrap;
+      scroll-snap-type: x mandatory;
+      border:2px solid orange;
+    }
+
+    img {
+      width: 200px;
+      scroll-snap-align: end;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <img src="../img/animal01.jpg" alt="">
+    <img src="../img/animal02.jpg" alt="">
+    <img src="../img/animal03.jpg" alt="">
+    <img src="../img/animal01.jpg" alt="">
+    <img src="../img/animal02.jpg" alt="">
+    <img src="../img/animal03.jpg" alt="">
+  </div>
+</body>
+
+</html>
